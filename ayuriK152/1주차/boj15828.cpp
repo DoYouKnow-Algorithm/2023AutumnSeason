@@ -10,17 +10,17 @@ int main() {
 	while (true) {
 		int d;
 		cin >> d;
-		if (d == -1)
+		if (d == -1)		// 입력이 -1이면 종료
 			break;
-		if (d == 0)
+		if (d == 0)			// 입력이 0이면 하나 처리
 			routerQueue.pop();
 		else {
-			if (routerQueue.size() < n)
+			if (routerQueue.size() < n)		// 입력받은 n보다 많이 들어오면 패킷 손실
 				routerQueue.push(d);
 		}
 	}
 
-	string result = "";
+	string result = "";			// 결과 출력용
 	if (routerQueue.empty())
 		result = "empty";
 	else {
