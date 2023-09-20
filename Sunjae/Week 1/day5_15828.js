@@ -20,10 +20,10 @@ let i = 0;
 
 // -1이 입력될 때까지
 while (input[i] != -1) {
-  if (input[i] != 0) {
+  if (input[i] != 0 && buffer.length < N) {
     // 0이 아니라면
     buffer.push(input[i]); // 해당 패킷을 큐에 push
-  } else {
+  } else if (input[i] == 0) {
     buffer.shift(); // 큐 맨 앞의 값을 제거
   }
   i++;
