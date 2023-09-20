@@ -1,5 +1,5 @@
 // const readFileSyncAddress = "/dev/stdin"; // 백준 제출
-const readFileSyncAddress = "예제.txt"; // VScode 확인
+const readFileSyncAddress = "Sunjae/예제.txt"; // VScode 확인
 
 // 파일을 읽어오기 위해 Node.js의 built-in file system module fs 사용
 const fs = require("fs");
