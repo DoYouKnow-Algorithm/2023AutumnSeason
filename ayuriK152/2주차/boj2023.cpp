@@ -1,3 +1,5 @@
+// 설명이 길어져서 노션으로 정리..
+// https://ayurik.notion.site/05bd3a50a51f415fbcd9d34c7a5e17cf?pvs=4
 #include <iostream>
 #include <cmath>
 #include <string>
