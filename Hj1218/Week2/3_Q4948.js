@@ -15,7 +15,7 @@ for( let i=0;i<input.length;i++){
     arr[0] = false; 
     arr[1] = false;
     for(let j=2;j*j<=2*n;j++){ 
-      if(arr[j]){ //소수가 아닌데 true인 경우
+      if(arr[j]){ //true인 경우
         for(let k=j*j;k<=2*n;k+=j){ //범위에 속하는 경우
           arr[k]=false; //false(소수 x)
         }
