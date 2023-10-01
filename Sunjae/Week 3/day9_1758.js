@@ -24,11 +24,8 @@ for (let i = 0; i < n; i++) {
   // 받게될 팁
   give = input[i] - i;
 
-  // 전체 팁에 추가
-  tip += Number(give);
-
-  // 팁을 받을수 없으면 반복문을 빠져나감
-  if (give <= 0) break;
+  // 팁을 받을수 있으면 전체 팁에 추가
+  if (give > 0) tip += Number(give);
 }
 
 console.log(tip);
