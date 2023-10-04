@@ -20,10 +20,10 @@ public class Main {
         }
         Arrays.sort(height); // 오름차순으로 정렬
 
-        for(int i = 1; i<n; i++){ // 거꾸로 차를 구하고 list에 넣어주기
+        for(int i = 1; i<n; i++){ // 차를 구하고 list에 넣어주기
             list.add(height[i] - height[i-1]);
         }
-        Collections.sort(list); // 키의 차이를 구한 것을 다시 내림차순으로 정렬
+        Collections.sort(list); // 키의 차이를 구한 것을 다시 오름차순으로 정렬
 
         int result = 0;
         for(int i = 0; i< n- k; i++){ // k개가 되게끔 조 나누기 (k개의 조 -> n-k번 자름)
