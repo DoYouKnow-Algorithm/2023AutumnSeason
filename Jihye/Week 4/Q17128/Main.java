@@ -30,6 +30,7 @@ public class Main {
             int play = Integer.parseInt(st.nextToken());
             for(int j = 0; j<4; j++){ // 4개의 그룹 값이 변하기 때문 -> 변한 값이 4개의 그룹 안에 속해있음
                 int index = (play - j + n - 1) % n + 1; // 장난을 친 소의 인덱스를 정확하게 찾기 위해 모듈러 연산을 활용
+                cow[index] *= -1; // 소의 품질 값 변동
                 // 전체 합에서 변동된 만큼을 빼거나 더함
                 // ex : products[0]이 5였다고 가정 했을 때 바뀐 값이 -5가 돼야 한다면 5 - (5*2)이기 때문
                 sum -= 2 * products[index];
