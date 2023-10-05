@@ -37,18 +37,17 @@ for (let i = 1; i < score.length; i++) {
   result += temp;
 }
 
-cow.map((c) => {
+cow.forEach((c) => {
   for (let i = 0; i < 4; i++) {
-    //소에게 장난쳤을때 영향을 받는 것은 c~c-3까지
+    // 소에게 장난쳤을 때 영향을 받는 것은 c~c-3까지
     c--;
     let index = c;
     if (c < 0) {
-      //인덱스가 범위를 벗어날 때
+      // 인덱스가 범위를 벗어날 때
       index = score.length + c;
     }
-    result -= s[index];
     s[index] *= -1;
-    result += s[index];
+    result += s[index] * 2;
   }
 
   console.log(result);
