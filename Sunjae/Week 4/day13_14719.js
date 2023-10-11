@@ -16,6 +16,7 @@ const height = input[1].split(" ");
 const H = input_1[0];
 const W = input_1[1];
 
+// 빗물
 let answer = 0;
 
 // 받을 수 있는 물의 양
