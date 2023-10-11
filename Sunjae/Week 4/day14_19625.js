@@ -10,14 +10,14 @@ const input = fs
   .trim()
   .split("\n");
 
-const [N, M, R] = input[0].split(" ");
+const [N, M, R] = input[0].split(" ").map(Number);
 
 let line = input.slice(1, N + 1);
 
 let arr = [];
 
 // 이중 배열 구현
-for (let i = 0; i < M; i++) {
+for (let i = 0; i < N; i++) {
   arr.push(line[i].split(" ").map(Number));
 }
 
